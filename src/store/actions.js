@@ -38,3 +38,12 @@ export const userDetails=(userDetails)=>{
         }
     }
 }
+
+export const userAccessToken=(accessToken)=>{
+    return{
+        type:actionTypes.SET_ACCESS_TOKEN,
+        payload:{
+            accessToken
+        }
+    }
+}

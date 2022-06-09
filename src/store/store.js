@@ -37,7 +37,8 @@ const initial_layout_reducer_state=
     authStatus:false,
     userDetails:{
 
-    }
+    },
+    accessToken:""
 
 }
 
@@ -55,6 +56,11 @@ const user_reducer=(state=initial_layout_reducer_state,action)=>
             return{
                 ...state,
                 userDetails:action.payload.userDetails
+            }
+        case actionTypes.SET_ACCESS_TOKEN:
+            return{
+                ...state,
+                accessToken:action.payload.accessToken
             }
         default:
             return state
