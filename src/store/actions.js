@@ -39,9 +39,10 @@ export const userDetails=(userDetails)=>{
     }
 }
 
+//user access token actions starts
 export const userAccessToken=(accessToken)=>{
     return{
-        type:actionTypes.SET_ACCESS_TOKEN,
+        type:actionTypes.SET_ACCESS_TOKEN, //this type will be used to match
         payload:{
             accessToken
         }
