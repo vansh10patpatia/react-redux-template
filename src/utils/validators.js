@@ -6,3 +6,10 @@ export const contactFormValidators =
             email: Yup.string().email("Invalid email address!").required("Please enter an email address."),
             body : Yup.string().required('This is a required field.'),
         });
+
+export const loginValidators = 
+        Yup.object({
+            email:Yup.string().required("Please enter email!").email("Please enter a valid email"),
+            password:Yup.string().required("Please enter password!"),
+            
+        })
